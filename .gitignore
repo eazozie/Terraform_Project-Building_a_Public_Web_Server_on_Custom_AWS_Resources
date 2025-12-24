@@ -1,3 +1,7 @@
 # hiding some folder
 
+<<<<<<< HEAD
 **/.terraform/
+=======
+1. **/.terraform/
+>>>>>>> 1eb591c3692945fed2b87581dd2fbb3453f3ffb5
