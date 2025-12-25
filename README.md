@@ -11,8 +11,13 @@
 - GitHub
 
 
-Outline/Steps used to deploy:
-- Write a lambda code (lambda_function.py)
-- Package the code into a Zip file
-- Define Terraform resources (IAM Role + Lambda)
-- Run Terraform init, plan, and apply
+### Outline/Steps used to deploy:
+- Step 1. Create vpc
+- Step 2. Create internet gateway
+- Step 3. Create custom route table
+- Step 4. Create a subnet
+- Step 5. Associate subnet with route table
+- Step 6. Create security group to allow port 22, 80, and 443
+- Step 7. Create a network interface with an IP in the subnet that was created in step 4
+- Step 8. Assign an elastic IP to the network interface created in step 7
+- Step 9. Create an ubuntu server and installl and enable apache2
